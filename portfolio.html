@@ -1,270 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <body class="portfolio-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename"></h1>
+        </a>
 
-</head>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
 
-<body class="portfolio-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename"></h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html" class="active">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Portfolio</h1>
-              <p class="mb-0">Explore our diverse portfolio showcasing cutting-edge software development projects. From dynamic web applications and responsive mobile apps to robust backend systems and innovative solutions, each project reflects our commitment to quality, creativity, and excellence. Our work is a testament to our expertise in delivering customized tech solutions that meet the unique needs of our clients across various industries.</p>
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="heading">
+          <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+              <div class="col-lg-8">
+                <h1>Portfolio</h1>
+                <p class="mb-0">
+                  Explore our diverse portfolio showcasing cutting-edge software
+                  development projects. From dynamic web applications and
+                  responsive mobile apps to robust backend systems and
+                  innovative solutions, each project reflects our commitment to
+                  quality, creativity, and excellence. Our work is a testament
+                  to our expertise in delivering customized tech solutions that
+                  meet the unique needs of our clients across various
+                  industries.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- End Page Title -->
 
-    </div><!-- End Page Title -->
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-product">Front-end</li>
+              <li data-filter=".filter-branding">Back-end</li>
+              <li data-filter=".filter-app">Mobile Apps</li>
+              <!-- <li data-filter=".filter-books">Books</li> -->
+            </ul>
+            <!-- End Portfolio Filters -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-product">Front-end </li>
-            <li data-filter=".filter-branding">Back-end</li>
-            <li data-filter=".filter-app">Mobile Apps</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/img.avif"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>WealthSphere</h4>
+                    <p>
+                      It's a dynamic platform that enables companies and
+                      individuals to create investment properties, invite
+                      investors, and allow investors to directly invest in and
+                      buy shares of these properties. Investors receive returns
+                      when the properties are sold, creating a seamless and
+                      transparent investment experience.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/img.avif"
+                      title="WealthSphere"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Jaseelamktgi/WealthSphere_investmentappweb"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/empiric.avif"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Study Abroad</h4>
+                    <p>
+                      It is a comprehensive platform for students seeking
+                      information on universities, courses, and study abroad
+                      opportunities. Built with a React and Bootstrap frontend
+                      for a seamless and responsive user experience, and powered
+                      by a Python Django backend for robust data management and
+                      API integration.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/empiric.avif"
+                      title="Study Abroad"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Jaseelamktgi/Study_Abroad"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/kaps.avif"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Kaps Cars</h4>
+                    <p>
+                      Kaps is a comprehensive platform for buying, selling, and
+                      exploring a wide range of secondhand cars. This project,
+                      built with HTML, CSS, Bootstrap for the frontend, and
+                      Python Django for the backend, offers users the ability to
+                      browse listings, calculate EMI, and manage their car deals
+                      effortlessly. With a responsive design and robust backend.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/kaps.avif
+                      "
+                      title="Kaps Cars"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://www.kapscars.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <!-- <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/books-1.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Books 1</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a
+                      href="assets/img/portfolio/books-1.jpg"
+                      title="Branding 1"
+                      data-gallery="portfolio-gallery-book"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div> -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/img1.avif"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Zopsho</h4>
+                    <p>
+                      It is a sleek and intuitive app designed to make accessing
+                      medical shop services more convenient. As the UI designer,
+                      I focused on creating a user-friendly interface that
+                      allows users to easily browse and order medicines, explore
+                      health products, and find essential information with just
+                      a few taps. Zopsho is your reliable companion for managing
+                      your health needs effortlessly.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/img1.avif"
+                      title="Zopsho"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Jaseelamktgi/zopsho"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/work-2.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Anas Contractors</h4>
+                    <p>
+                      This is a fully responsive website for Anas Contractors,
+                      showcasing their construction and telecom services. Built
+                      with React, Bootstrap, and custom HTML/CSS, the site
+                      offers a sleek and modern user interface. It includes
+                      multiple sections such as About Us, Services, Projects,
+                      and Contact.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/work-2.jpg"
+                      title="Anas Contractors"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://anascontractors.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/work-51.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>StepInStyle</h4>
+                    <p>
+                      StepInStyle is your go-to e-commerce platform for all
+                      things shoes. Whether you're looking to buy, sell, or
+                      explore the latest footwear trends, our user-friendly
+                      interface and robust backend, powered by Python Django,
+                      ensure a seamless shopping experience. With advanced
+                      search functionality and a secure add-to-cart feature,
+                      finding your perfect pair has never been easier. Dive into
+                      our curated collections and step up your shoe game today!
+                    </p>
+                    <a
+                      href="assets/img/portfolio/work-51.jpg"
+                      title="StepInStyle"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Jaseelamktgi/E-Kart_Django"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <!-- <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/books-2.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Books 2</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a
+                      href="assets/img/portfolio/books-2.jpg"
+                      title="Branding 2"
+                      data-gallery="portfolio-gallery-book"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div> -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/work-21.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Word Bridge</h4>
+                    <p>
+                      It is a user-friendly mobile app designed to bridge the
+                      gap between English and Malayalam. Built with Flutter,
+                      this dictionary app allows you to effortlessly search for
+                      words in either language and find their corresponding
+                      meanings. Whether you're learning a new language or simply
+                      need a quick translation, MalaLexicon is your go-to
+                      resource for accurate and reliable word meanings, all at
+                      your fingertips.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/work-21.jpg"
+                      title="Word Bridge"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Jaseelamktgi/newdictionaryapp"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/im4.avif"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Empiric Plywood</h4>
+                    <p>
+                      It is a responsive website showcasing plywood products and
+                      services. Built with React, Bootstrap, HTML, CSS, and
+                      FontAwesome icons, this project features seamless
+                      navigation, modern design, and efficient routing for an
+                      engaging user experience.
+                    </p>
+                    <a
+                      href="assets/img/portfolio/im4.avif"
+                      title="Empiric Plywood"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://empiricplywood.com/"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/img3.avif"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>WordVault</h4>
+                    <p>
+                      It is your digital library, designed to offer a seamless
+                      experience for book enthusiasts and collectors alike.
+                      Built with Python Django and a sleek front-end using HTML,
+                      CSS, and Bootstrap, this app allows users to explore, add,
+                      update, and delete books with ease. Whether you're
+                      curating your personal collection or discovering new
+                      reads, BookNook provides all the tools you need to manage
+                      your literary world effortlessly. Dive in and start
+                      building your perfect bookshelf!
+                    </p>
+                    <a
+                      href="assets/img/portfolio/img3.avif"
+                      title="WordVault"
+                      data-gallery="portfolio-gallery-branding"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="https://jaseelamktgi456.pythonanywhere.com/
+                  "
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <!-- <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
+              >
+                <div class="portfolio-content h-100">
+                  <img
+                    src="assets/img/portfolio/books-3.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Books 3</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a
+                      href="assets/img/portfolio/books-3.jpg"
+                      title="Branding 3"
+                      data-gallery="portfolio-gallery-book"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a
+                      href="portfolio-details.html"
+                      title="More Details"
+                      class="details-link"
+                      ><i class="bi bi-link-45deg"></i
+                    ></a>
+                  </div>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+              </div> -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
         </div>
+      </section>
+      <!-- /Portfolio Section -->
+    </main>
 
-      </div>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-    </section><!-- /Portfolio Section -->
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  </main>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
